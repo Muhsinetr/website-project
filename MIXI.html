@@ -1,0 +1,2570 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.1.6.2 (Linux)">
+	<META NAME="AUTHOR" CONTENT="maxon">
+	<META NAME="CREATED" CONTENT="20200229;170700000000000">
+	<META NAME="CHANGEDBY" CONTENT="maxon">
+	<META NAME="CHANGED" CONTENT="20200229;170700000000000">
+	<META NAME="AppVersion" CONTENT="12.0000">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+
+
+
+	<STYLE TYPE="text/css">
+	
+	
+	.scroll{
+	position: fixed;
+	top: 50%;
+	left: 0%;
+	width:50px;
+	height:30px;
+	display: block;
+	background:#000;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-size:15px;
+	text-decoration:none;
+	z-line: 10000;
+	}
+	.muhu{
+	position: fixed;
+	top: 45%;
+	left: 0%;
+	width:50px;
+	height:30px;
+	display: block;
+	background:red;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-size:15px;
+	text-decoration:none;
+	z-line: 10000;
+	
+	}
+	
+	
+	
+	
+	
+	<!--
+		@page { size: 8.5in 11in; margin: 1in }
+		P { margin-bottom: 0.08in; direction: ltr; widows: 2; orphans: 2 }
+	-->
+	</STYLE>
+	
+	
+	
+	<!-- copy for htmlht begin --!>
+	
+	<script type="text/javascript">
+	function FindNext () {
+	var str = document.getElementById ("findField").value;
+	if (str == "") {
+	alert ("Please enter some text to search!");
+	return;
+	}
+	
+	var supported = false;
+	var found = false;
+	if (window.find) {        // Firefox, Google Chrome, Safari
+	supported = true;
+	// if some content is selected, the start position of the search 
+	// will be the end position of the selection
+	found = window.find (str);
+	}
+	else {
+	if (document.selection && document.selection.createRange) { // Internet Explorer, Opera before version 10.5
+	var textRange = document.selection.createRange ();
+	if (textRange.findText) {   // Internet Explorer
+	supported = true;
+	// if some content is selected, the start position of the search 
+	// will be the position after the start position of the selection
+	if (textRange.text.length > 0) {
+	textRange.collapse (true);
+	textRange.move ("character", 1);
+	}
+	
+	found = textRange.findText (str);
+	if (found) {
+	textRange.select ();
+	}
+	}
+	}
+	}
+	
+	if (supported) {
+	if (!found) {
+	alert ("The following text was not found:\n" + str);
+	}
+	}
+	else {
+	alert ("Your browser does not support this example!");
+	}
+	}
+	</script>
+	
+	
+	<!-- copy for js end --!>
+	
+	
+	
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+
+
+<!-- copy for html begin --!>
+
+<a href="#" class="scroll top">Top</a>
+<button class="muhu" onclick="FindNext ();">Find!</button>
+<input type="text" id="findField" value="" size="20" />
+   <button onclick="FindNext ();">Find!</button>
+
+
+<!-- copy for html end --!>
+
+
+<TABLE WIDTH=626 CELLPADDING=7 CELLSPACING=0 STYLE="page-break-before: always">
+	<COL WIDTH=136>
+	<COL WIDTH=195>
+	<COL WIDTH=50>
+	<COL WIDTH=50>
+	<COL WIDTH=50>
+	<COL WIDTH=62>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><BR>
+			</P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><BR>
+			</P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><BR>
+			</P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><B>NEPTON</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>Item
+			Name</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>P.Price</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>Retail</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>Qty</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>Amount</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>APOORVA
+			GRINDER GENEVA RHINO2</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2776.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3500.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>Stock
+			Report As On 29-02-21</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>APOORVA
+			MIXI GENIUS METALIC</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2230.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2700.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BAJAJ
+			IRON BOX STEAM MX15</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>970.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1190.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><B>NEPTON</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BAJAJ
+			MIXI CLASSIC 750</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BAJAJ
+			MIXI GLORY 500W</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2010.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2400.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>Stock
+			Report As On 29-02-22</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BAJAJ
+			MIXI Gx 10 600W</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2850.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3300.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BAJAJ
+			MIXI GX11</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2970.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3400.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2967.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><B>NEPTON</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BAJAJ
+			MIXI RUBY600</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2431.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2850.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BAJAJ
+			MIXI twister</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3500.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>Stock
+			Report As On 29-02-23</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BAJAJ
+			OVEN 2310 ETC MICROWAVE</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>8735.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>9600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			GRINDER RHINO</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3285.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3900.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><B>NEPTON</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			GRINDER RHINO plus</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4250.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>-1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>Stock
+			Report As On 29-02-24</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI CYCLONE3</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2850.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3300.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI DESIRE3</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><B>NEPTON</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI DESIRE3</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4986.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI DESIRE4</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5750.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>6400.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>Stock
+			Report As On 29-02-25</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI GRAND</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2046.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2500.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI HANDY PLUS650</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2557.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3000.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><B>NEPTON</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI HANDY V2</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2000.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2400.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3900.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI IVORY PLUS750</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2950.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3350.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>Stock
+			Report As On 29-02-26</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI IVORY600</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3091.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3500.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI JET</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2950.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3400.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2950.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><B>NEPTON</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI MATCHLESS4</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4700.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>7700.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI Pebble</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2985.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3500.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>Stock
+			Report As On 29-02-27</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI Pebble PLus 4JAR</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2800.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI RHINO turbo</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2499.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2850.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><B>NEPTON</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI spectra 4</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4266.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4800.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI spectra3</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3900.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4350.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>Stock
+			Report As On 29-02-28</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>BUTTERFLY
+			MIXI SPLENDID</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3200.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3850.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>31</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>FLY
+			MIXI CYCLONE3</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4190.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4700.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>32</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>GREENCHEF
+			kettle 1.2</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>553.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>750.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>33</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>GREENCHEF
+			mixi MERCURY 1hp</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2425.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2800.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>34</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>GREENCHEF
+			mixi NETO</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1999.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2000.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>35</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>GREENCHEF
+			MIXI STROBE 3JAR600W</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1550.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1800.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3100.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>36</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>GRRENCHEF
+			MIXI LOFTPURE750</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2370.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2850.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>37</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>GRRENCHEF
+			MIXI MERCURY750</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2500.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>38</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>GRRENCHEF
+			MIXI NETO550</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1700.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>39</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>GTRACK
+			HandMixer</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>862.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>990.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>862.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>40</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>GTRACK
+			MIXI Beat550</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1850.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>-1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>-1400.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>41</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>HAVELLS
+			MIXI 3JAR SPRINT</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2985.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3400.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5970.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>42</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>HAVELLS
+			MIXI 4JAR SPRINT</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3450.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3500.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>43</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>HAVELLS
+			MIXI ASPRO 500W</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2370.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2700.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4734.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>44</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>HAVELLS
+			MIXI ENERGIA 500W</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2900.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3200.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>45</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>HAVELLS
+			MIXI GRACIA 3JAR</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4035.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4450.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>87.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>46</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>HAVELLS
+			MIXI MAXX GRIND 750blue</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3185.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3700.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>25.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>47</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>HAVELLS
+			OVEN OTG 18R SS</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4646.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5400.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4650.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>48</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>HAVELLS
+			OVEN OTG 20R Black</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4178.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4850.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>49</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>HAVELLS
+			OVEN OTG 24R Blak</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5250.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5800.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>50</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>HNJ</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2379.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2750.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>51</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>KENSTAR
+			MIXI</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1650.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2000.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>52</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>LAKSHMI
+			GRINDER DLX</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2200.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2800.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>53</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>LAKSHMI
+			GRINDER SILVER</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2200.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2900.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>54</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>LAKSHMI
+			GRINDER TILTING 2Ltr</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3300.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>55</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>LORDS
+			MIXI</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1760.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>56</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>MITASHA
+			MIXI 750W</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2200.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2500.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>57</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>MIXI
+			PREMIEUM 3jar</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1625.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2000.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>58</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>MIXI
+			V GUARD</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>59</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>msp2</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>60</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>ONIX
+			glass top stove MINI</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1730.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1950.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>61</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>ONIX
+			MIXI  BLENDER</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3595.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>62</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>ONIX
+			MIXI  BLOOM650</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1995.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2400.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>63</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>ONIX
+			MIXI  CELESTA 750white</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2335.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2750.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2335.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>64</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>ONIX
+			MIXI CELERIA 550</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1845.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2250.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>65</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>ONIX
+			MIXI CELESTA premium750</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2230.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2650.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>66</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>ONIX
+			MIXI RIO 750</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2200.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>8780.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>67</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>OPTIMA
+			COCUNUT Scrapper</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1550.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1950.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>68</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>OPTIMA
+			EMERGENCY RL3T</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1112.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1325.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>69</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>OPTIMA
+			Hand Blender</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1157.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1500.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>70</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>PANASONIC
+			MXAC 400</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4700.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5500.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>71</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>PHILIPS
+			MIXI 500W 1606</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1900.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2400.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>72</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>PHILIPS
+			MIXI 750W BLK</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2850.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3400.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>73</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>PREETHI
+			MIXI BLUEBERRY</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3380.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3900.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>74</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>PREETHI
+			MIXI BLULEAF GOLD</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3825.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4350.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>75</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>PREETHI
+			MIXI BLULEAF SILVER</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3750.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>76</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>PREETHI
+			MIXI CROWN</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2050.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2500.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>77</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>PREETHI
+			MIXI DAISY750</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3350.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3800.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>78</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>PREETHI
+			MIXI GALAXY 750</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3000.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3000.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>79</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>PREETHI
+			MIXI POPULAR</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>6200.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>80</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>PREETHI
+			MIXI SPICE550</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2750.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3150.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>81</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>PREETHI
+			MIXI steel SUPREME</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5450.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>6100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>82</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>slate</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>83</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>solit</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>84</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>SONEY
+			MIXI 750</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2250.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2700.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>85</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>SUJATHA
+			DYNAMIX MIXI</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4500.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4750.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>13500.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>86</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>SUJATHA
+			FROOTMIX MIXI</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3900.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>7184.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>87</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>SUJATHA
+			JAR Dnmx BIG dom</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>800.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1050.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>88</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>SUJATHA
+			JAR Dnmx Chutney</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>370.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>485.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>370.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>89</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>SUJATHA
+			JAR Suprmx MED</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>481.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>585.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>90</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>SUJATHA
+			MULTIMIX MIXI</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5239.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5700.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5239.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>91</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>SUJATHA
+			POWERMATIC MIXI</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3694.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4000.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>7250.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>92</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>SUJATHA
+			POWERMATIC PLUS MIXI</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4602.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4900.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>-1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>-4510.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>93</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>SUJATHA
+			SUPERMIX3</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3950.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4250.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>8.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>32760.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>94</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>USHA
+			MIXI 500w</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2000.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>95</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>USHA
+			MIXI IMPREZZA</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3450.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3950.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>96</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>VGUARD
+			MIXI ENVY600</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3482.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3950.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>97</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>VGUARD
+			MIXI INSIGHT 750W</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3570.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>98</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>VGUARD
+			MIXI INSIGNIA 4 jar</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4516.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5150.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>13548.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>99</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>VGUARD
+			MIXI INSIGNIA750</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3700.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4300.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>18000.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>100</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>VGUARD
+			MIXI INSPIRA 4 jar</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3970.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4500.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>101</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>VGUARD
+			MIXI VELOCITY 4JAR</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3850.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>4350.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>102</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>VGUARD
+			MIXI VELOCITY 650</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2800.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3200.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>103</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>VGUARD
+			MIXI VELOCITY 750W</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3500.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>6.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>18600.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>104</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>VGUARD
+			MIXI VX 600</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2628.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2990.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>6.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>15768.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>105</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>VIDIEM
+			MIXI EVAsky 650</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2200.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2700.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>106</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>VIM</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>-5.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>107</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>WONDER
+			CHEF OVEN OTG19</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2600.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3100.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>5000.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>108</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>X</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>1625.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>2000.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>-1.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>109</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>YERA
+			DINNER SET 12Pcs Galaxy</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>332.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>475.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>3.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>996.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>110</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>yj5/853</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2>0.00</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><BR>
+			</P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><BR>
+			</P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><BR>
+			</P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=BOTTOM>
+		<TD WIDTH=136 HEIGHT=3 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=195 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2><B>Total</B></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><BR>
+			</P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><BR>
+			</P>
+		</TD>
+		<TD WIDTH=50 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><BR>
+			</P>
+		</TD>
+		<TD WIDTH=62 BGCOLOR="#ffffff" STYLE="border: none; padding: 0in">
+			<P ALIGN=RIGHT><FONT COLOR="#000000"><FONT FACE="Arial, serif"><FONT SIZE=2><B>203030.00</B></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0.14in"><BR><BR>
+</P>
+</BODY>
+</HTML>
