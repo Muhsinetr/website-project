@@ -3,13 +3,22 @@
 <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
 <!-- include ar.js for A-Frame -->
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<script src="https://unpkg.com/aframe-text-geometry-component/dist/aframe-text-geometry-component.min.js"></script> 
+    <script src="myfont.typeface.js"></script> 
+  
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
+    <a-assets>
+        <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+        <a-mixin id="boldFont" text="font: #optimerBoldFont"></a-mixin>
+      </a-assets>
     <!-- create your content here. just a box for now -->
     <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
-    <a-text value="IQBAL HOMENEEDS"position='-1 0.5 0'material='color: blue;'></a-text>
+    <a-text value="IQBAL HOMENEEDS"position='-1 3 0'material='color: blue;'></a-text>
     <!-- define a camera which will move according to the marker position -->
     <a-marker-camera preset='kanji'></a-marker-camera>
+<a-entity mixin="boldFont" text-geometry="value: What's up"></a-entity>
+      <a-entity text-geometry="value: Dog?; font: #optimerBoldFont"></a-entity>
   </a-scene>
 </body>
 </html>
