@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Query Parameter Example</title>
+    <title>Read Text File</title>
+    <style>
+        #mydiv p{
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+
+    </style>
 </head>
 <body>
-    <p id="output"></p>
+
+    <div id="mydiv"></div>
 
     <script>
+
+        ///////////////links to change\\\\\\\\\\\\\\\\\\\\
+
+        ///don't forget to add "," when you add new link
+        ///emsure that the "," is there at the end when you change link
+
+var lobj = [/*link-0*/"https://www.youtube.com/shorts/69KvMSkwPEQ",
+            /*link-1*/"https://www.youtube.com/watch?v=KTeuJxbopnU",
+            /*link-2*/"https://www.youtube.com/shorts/69KvMSkwPEQ",
+            /*link-3*/"https://www.youtube.com/watch?v=KTeuJxbopnU",
+            /*link-4*/"https://www.youtube.com/watch?v=LN3TBA6hFIo",
+            /*link-5*/"https://www.youtube.com/shorts/69KvMSkwPEQ"   
+            ]
+
+
         // Get the query string part of the URL
         const queryString = window.location.search;
 
@@ -16,18 +40,25 @@
 
         // Access the query parameter by name (e.g., "name")
         
-	const name = params.get('name');
+	const name = params.get('Link');
 
-        // Display the value of the query parameter
-       
-	 const outputElement = document.getElementById('output');
-        outputElement.textContent = `Link: ${name}`;
-		if(name == 1){
-	window.location.replace("https://www.youtube.com/shorts/69KvMSkwPEQ");
-}else if(name==2){
+        for(i=0;i<lobj.length;i++){
+            var p_id = "link-" + i;
+            var cl = document.URL;
+            var contant = cl + "?" + "Link=" + p_id;
 
-window.location.replace("https://www.youtube.com/watch?v=KTeuJxbopnU");
-}
+            const para = document.createElement("p");
+            const node = document.createTextNode(contant);
+            para.appendChild(node);
+
+            const element = document.getElementById("mydiv");
+            element.appendChild(para);
+
+            if(name==p_id){
+                window.location.replace(lobj[i]);
+            }  
+        }
+
     </script>
 </body>
 </html>
