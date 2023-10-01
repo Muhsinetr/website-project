@@ -1,0 +1,23 @@
+{
+    "name": "THAJVEED",
+    "short_name": "THAJVEED",
+    "description": "FOR EASY UNDERSTAND OF THAJVEED",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#009578",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+      {
+        "src": "Files/resized65.png",
+        "sizes": "65x65",
+        "type": "image/png"
+      },
+      {
+        "src": "Files/icon450.png",
+        "sizes": "450x450",
+        "type": "image/png"
+      }
+    ]
+  }
